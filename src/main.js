@@ -1,4 +1,4 @@
-import "./scss./header.js" ;
+import "./js./header.js" ;
 import "./js./title.js" ;
 import "./js./leap-year.js" ;
 import "./js./number-guess.js" ;
