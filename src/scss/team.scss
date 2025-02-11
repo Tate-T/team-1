@@ -1,0 +1,91 @@
+.team{
+    &__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title{
+        color: #000;
+font-family: "Montserrat Alternates";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 36px;
+    }
+
+    &__content{
+        display: flex;
+        gap: 245px;
+        margin-bottom: 36px;
+        align-items: center;
+    }
+
+    &__svg{
+        width: 50px;
+height: 100px;
+flex-shrink: 0;
+stroke-width: 1px;
+stroke: #000;
+    }
+
+    &__card-screen{
+        height: 249px;
+    }
+
+    &__list{
+        display: flex;
+        margin-bottom: 24px;
+    }
+
+    &__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__card:nth-child(2){
+        display: none;
+        pointer-events: none;
+        opacity: none;
+    }
+
+    &__pic{
+        width: 150px;
+height: 150px;
+flex-shrink: 0;
+border-radius: 20px;
+background: #D9D9D9;
+    }
+
+    &__name{
+        color: #000;
+font-family: "Montserrat Alternates";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0;
+    }
+
+    &__role{
+        color: #000;
+font-family: "Montserrat Alternates";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    }
+
+    &__line{
+        width: 536px;
+        height: 2px;
+flex-shrink: 0;
+stroke-width: 3px;
+background-color: #000;
+margin-top: 36px;
+    }
+
+}
