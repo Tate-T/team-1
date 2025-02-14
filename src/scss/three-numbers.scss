@@ -1,0 +1,58 @@
+.three {
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__text {
+        color: #000;
+font-family: "Montserrat Alternates";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    }
+
+    &__box {
+        display: flex;
+        gap: 38px;
+        margin: 36px 0;
+    }
+
+    &__input {
+        display: inline-flex;
+padding: 10px 20px;
+align-items: flex-start;
+gap: 10px;
+border-radius: 20px;
+background: #D7D7D7;
+box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+width: 135px;
+height: 35px;
+color: #7E7E7E;
+font-family: "Montserrat Alternates";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    }
+
+    &__answer {
+        color: #000;
+font-family: "Montserrat Alternates";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    }
+}
+
+.line {
+    width: 536px;
+height: 2px;
+flex-shrink: 0;
+background-color: #000;
+margin-top: 36px;
+}
