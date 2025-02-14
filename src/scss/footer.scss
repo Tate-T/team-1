@@ -1,0 +1,59 @@
+.footer{
+    background: #FFF;
+    padding: 60px 175px;
+
+    &__containre{
+        display: flex;
+        gap: 186px;
+        align-items: center;
+    }
+
+    &__text-box{
+        width: 207px;
+        height: 100px;
+    }
+
+    &__form{
+display: flex;
+gap: 36px;
+    }
+
+    &__input{
+        display: inline-flex;
+padding: 10px 80px 10px 10px;
+align-items: flex-start;
+gap: 10px;
+border-radius: 20px;
+background: #D7D7D7;
+    }
+
+    &__button{
+padding: 10px;
+align-items: flex-start;
+color: #FFF;
+font-family: "Montserrat Alternates";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+border-radius: 20px;
+background: #000;
+transition-duration: 250ms
+    }
+
+    &__button:hover{
+        transition-duration: 250ms;
+        background-color: #8ACECF;
+        color: #000;
+    }
+
+    &__warning{
+        color: #000;
+font-family: "Montserrat Alternates";
+font-size: 6px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 18px;
+    }
+}
