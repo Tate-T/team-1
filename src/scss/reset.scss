@@ -45,9 +45,10 @@ img {
 }
 
 body{
-  background: url(/img/background.webp);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url(/img/background.webp), rgb(217, 217, 217);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: cover;
 }
 
 h2 {
