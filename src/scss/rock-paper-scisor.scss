@@ -22,13 +22,18 @@ margin-bottom: 36px;
         display: flex;
         gap: 38px;
     }
+
     &__option{
+        border-radius: 20px;
+background: #000;
+    }
+    &__button{
         display: inline-flex;
         padding: 10px;
         align-items: flex-start;
         gap: 10px;
         border-radius: 20px;
-background: #000;
+background-color: #000;
 transition-duration: 250ms;
     }
     &__svg{
@@ -37,16 +42,16 @@ height: 40px;
         fill: white;
         transition-duration: 250ms;
     }
-    &__option:nth-child(2){
+    &__button:nth-child(2){
         transform: rotate(90deg);
     }
 
-    &__option:hover{
+    &__button:hover{
         transition-duration: 250ms;
         background-color: #8ACECF;
     }
 
-    &__option:hover &__svg{
+    &__button:hover &__svg{
         transition-duration: 250ms;
         fill: black;
     }
@@ -67,6 +72,7 @@ font-size: 12px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+visibility: hidden;
     }
     &__text-box{
         display: inline-flex;
