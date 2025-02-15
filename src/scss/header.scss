@@ -83,7 +83,9 @@ fill: #FFF;
     display: none;
 flex-direction: column;
 border-radius: 0px 0px 20px 20px;
-border: 1px solid #000;
+border-left: 1px solid #000;
+border-right: 1px solid #000;
+border-bottom: 1px solid #000;
 background: #FFF;
 transition: 2s;
   }
@@ -138,4 +140,8 @@ transition: 1s;
     height: 20px;
     border-radius: 20px;
   }
+}
+
+.text {
+  color: #fff;
 }
