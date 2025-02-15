@@ -77,4 +77,14 @@ stroke-width: 3px;
 background-color: #000;
 margin-top: 36px;
 }
+
+&__button:hover{
+  transition-duration: 250ms;
+  background-color: #8ACECF;
+}
+
+&__button:hover &__svg{
+  transition-duration: 250ms;
+  fill: black;
+}
 }
