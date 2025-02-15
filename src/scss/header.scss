@@ -52,6 +52,7 @@ fill: #FFF;
 
   &__li {
     display: flex;
+    flex-wrap: wrap;
     width: 100px;
     height: 15px;
     justify-content: center;
@@ -59,8 +60,37 @@ fill: #FFF;
     gap: 8px;
   }
 
+&__acardion{
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+&__acardion:last-child {
+  border-radius: 0px 0px 20px 20px;
+}
+
+&__acardion:hover {
+  background: #F1F1F1;
+}
+
+
   &__acardions {
+    position: absolute;
+    top: 47px;
     display: none;
+flex-direction: column;
+border-radius: 0px 0px 20px 20px;
+border: 1px solid #000;
+background: #FFF;
+  }
+
+  &__true {
+    display: flex;
+    width: 160px;
+height: 105px;
   }
 
   &__minitext {
