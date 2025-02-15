@@ -18,7 +18,7 @@ margin-bottom: 36px;
 height: 35px;
 flex-shrink: 0;
 filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
-margin-bottom: 36px;
+
 
     }
 
@@ -47,18 +47,31 @@ border: none;
 position: absolute;
 left: 94%;
 top: 0px;
-
+transition-duration: 250ms;
     }
 
     &__svg{
         width: 15px;
 height: 15px;
 fill: white;
+transition-duration: 250ms;
+    }
+
+    &__button:hover{
+        transition-duration: 250ms;
+        background-color: #8ACECF;
+    }
+
+    &__button:hover &__svg{
+        transition-duration: 250ms;
+        fill: black;
     }
 
     &__content{
         display: flex;
         gap: 149px;
+        align-items: center;
+        margin-bottom: 36px;
     }
 
     &__line{
