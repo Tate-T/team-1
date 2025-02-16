@@ -18,7 +18,14 @@ stadium.onclick = function(event) {
       ballCoords.top = stadium.clientHeight - ball.clientHeight;
     }
 
-    ball.style.transform = `translate(${ballCoords.left}px, ${ballCoords.top}px)`
+    ball.style.transform = `translate(${ballCoords.left}px, ${ballCoords.top}px) rotate(${ballCoords.left}deg)`
+    console.log(ballCoords.left, ballCoords.left)
   }
+
+  const pointOne = document.querySelector("#one")
+  const pointTwo = document.querySelector("#one")
+  const pointThree = document.querySelector("#one")
+  
+  let randomNum = Math.round(Math.random() * (666 - 1) + 1);
 
 

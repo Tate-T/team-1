@@ -28,6 +28,7 @@ position: relative;
     &__ball{
         position: absolute;
         transition-duration: 250ms;
+        filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
     }
 
     &__text{
@@ -44,6 +45,7 @@ position: relative;
         width: 50px;
         height: 50px;
         background-color: gold;
+        border: 1px goldenrod dashed;
         border-radius: 50%;
         position: absolute;
     }
