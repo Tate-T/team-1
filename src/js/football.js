@@ -17,8 +17,8 @@ stadium.onclick = function(event) {
     if (ballCoords.top + ball.clientHeight > stadium.clientHeight) {
       ballCoords.top = stadium.clientHeight - ball.clientHeight;
     }
-    ball.style.left = 0;
-    ball.style.top = 0;
 
     ball.style.transform = `translate(${ballCoords.left}px, ${ballCoords.top}px)`
   }
+
+
