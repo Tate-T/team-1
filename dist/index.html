@@ -12,25 +12,345 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
     
-    <script type="module" crossorigin src="/team-2/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/team-2/assets/index-beb7c4b7.css">
+    <script type="module" crossorigin src="/team-1/commonHelpers.js"></script>
+    <link rel="stylesheet" href="/team-1/assets/index-26565762.css">
   </head>
   <body>
-    ENOENT: no such file or directory, open 'C:\Users\1\Documents\GitHub\team-1\src\partials.\header.html'
-    ENOENT: no such file or directory, open 'C:\Users\1\Documents\GitHub\team-1\src\partials.\title.html'
-    ENOENT: no such file or directory, open 'C:\Users\1\Documents\GitHub\team-1\src\partials.\leap-year.html'
-    ENOENT: no such file or directory, open 'C:\Users\1\Documents\GitHub\team-1\src\partials.\number-guess.html'
-    ENOENT: no such file or directory, open 'C:\Users\1\Documents\GitHub\team-1\src\partials.\rock-paper-scisor.html'
-    ENOENT: no such file or directory, open 'C:\Users\1\Documents\GitHub\team-1\src\partials.\calc.html'
-    ENOENT: no such file or directory, open 'C:\Users\1\Documents\GitHub\team-1\src\partials.\time-calc.html'
-    ENOENT: no such file or directory, open 'C:\Users\1\Documents\GitHub\team-1\src\partials.\dinosour.html'
-    ENOENT: no such file or directory, open 'C:\Users\1\Documents\GitHub\team-1\src\partials.\football.html'
-    ENOENT: no such file or directory, open 'C:\Users\1\Documents\GitHub\team-1\src\partials.\three-numbers.html'
-    ENOENT: no such file or directory, open 'C:\Users\1\Documents\GitHub\team-1\src\partials.\team.html'
-    ENOENT: no such file or directory, open 'C:\Users\1\Documents\GitHub\team-1\src\partials.\scientist.html'
-    ENOENT: no such file or directory, open 'C:\Users\1\Documents\GitHub\team-1\src\partials.\footer.html'
-    ENOENT: no such file or directory, open 'C:\Users\1\Documents\GitHub\team-1\src\partials.\header-modal.html'
-    ENOENT: no such file or directory, open 'C:\Users\1\Documents\GitHub\team-1\src\partials.\footer-modal.html'
+    <div class="header">
+  <div class="container header__container">
+<img class="header__logo" src="../img/logo.png" alt="">
+  <ul class="header__list">
+    <li class="header__li">
+        <p class="header__link">Інтерактив</p>
+        <button class="header__button">
+          <svg class="header__icon">
+            <use href="../img/symbol-defs.svg#icon-arrow-down" />
+          </svg>
+        </button>
+      <ul class="header__acardions">
+        <li class="header__acardion">Числовий</li>
+        <li class="header__acardion">Ігровий</li>
+        <li class="header__acardion">Ознайомчий</li>
+      </ul>
+    </li>
+    <li class="header__li"><a href="" class="header__link">Наша команда</a></li>
+    <li class="header__li"><a href="" class="header__link">Контакти</a></li>
+  </ul>
+  <label class="header__lable">
+    <input type="checkbox" role="switch" class="header__switch"/>
+    <div class="header__circle">
+      <svg class="header__svg">
+        <use href="../img/symbol-defs.svg#icon-sun" />
+      </svg>
+    </div>
+  </label>
+  <p class="header__minitext">Вітаємо, User!</p>
+</div>
+</div>
+
+    <section class="hero">
+    <div class="container hero__box">
+    <h1 class="hero__title">Популярні інетрактивні ігри</h1>
+    <div class="hero__line"></div>
+    </div>
+</section>
+
+
+    <section class="year">
+  <div class="container year__box">
+  <h2 class="year__title">Перевір в який рік ти народився</h2>
+  <div class="year__content">
+  <form class="year__form" action="">
+    <input
+      type="text"
+      placeholder="Введіть рік народження"
+      class="year__input"
+    />
+    <button type="submit" class="year__button">
+      <svg class="year__svg">
+        <use href="../img/symbol-defs.svg#icon-search" />
+      </svg>
+    </button>
+  </form>
+  <p class="year__result">Ви народилися у високосний рік!</p>
+  </div>
+  <div class="year__line"></div>
+  </div>
+</section>
+
+    <div class="quess">
+    <div class="quess__container container">
+        <h2 class="quess__text">Вгадай число, яке загадав комп’ютер</h2>
+        <div class="quess__box">
+            <form action="" class="quess__input">
+                <input class="quess__inpu"  type="text" placeholder="Введіть число">
+                <button class="quess__button"><svg class="quess__svg">
+                    <use href="../img/symbol-defs.svg#icon-search" />
+                  </svg></button>
+            </form>
+            <p class="quess__answer">Вітаю, ви вгадали число!<span class="quess__span"> </span></p>
+        </div>
+        <div class="line"></div>
+    </div>
+</div>
+    <section class="rps">
+  <div class="container rps__box">
+    <h2 class="rps__title">Камінь - ножиці - папір</h2>
+    <div class="rps__content">
+      <ul class="rps__options">
+        <li class="rps__option">
+          <button type="button" class="rps__button">
+          <svg class="rps__svg">
+            <use href="../img/symbol-defs.svg#icon-rock" />
+          </svg>
+          </button>
+        </li>
+        <li class="rps__option">
+          <button type="button" class="rps__button">
+          <svg class="rps__svg">
+            <use href="../img/symbol-defs.svg#icon-scissor" />
+          </svg>
+          </button>
+        </li>
+        <li class="rps__option">
+          <button type="button" class="rps__button">
+          <svg class="rps__svg">
+            <use href="../img/symbol-defs.svg#icon-paper" />
+          </svg>
+          </button>
+        </li>
+      </ul>
+      <ul class="rps__stats">
+        <li class="rps__stat"><p class="rps__text">Рахунок:</p></li>
+        <li class="rps__stat">
+          <p class="rps__text">Комп’ютер - <span class="Comp-value">0</span></p>
+        </li>
+        <li class="rps__stat">
+          <p class="rps__text">Ви - <span class="Your-value">0</span></p>
+        </li>
+      </ul>
+    </div>
+      <p class="rps__result">Ви виграли раунд!</p>
+      <div class="rps__text-box">
+      <p class="rps__comp">Варіант комп’ютера</p>
+      </div>
+    
+    <div class="rps__line"></div>
+  </div>
+</section>
+
+    <div class="calc">
+    <div class="container calc__container">
+        <h2 class="calc__text">Калькулятор</h2>
+        <form class="calc__box">
+            <input placeholder="Введіть число" class="calc__input" id="firste" type="text">
+            <div class="calc__buttons">
+                <button class="calc__button" id="plu">+</button>
+                <button class="calc__button" id="mno">*</button>
+                <button class="calc__button" id="min">-</button>
+                <button class="calc__button" id="dil">/</button>
+            </div>
+            <input placeholder="Введіть число" class="calc__input" id="seconde" type="text">
+            <button class="calc__button"  id="dor">=</button>
+            <p class="calc__answer">Результат</p>
+        </form>
+        <div class="line"></div>
+    </div>
+</div>
+    <section class="time-calc">
+  <div class="container time-calc__box">
+    <h2 class="time-calc__title">Калькулятор часу</h2>
+    <div class="time-calc__content">
+        <form  action="" class="time-calc__form">
+            <input
+              type="text"
+              placeholder="Введіть число"
+              class="time-calc__input"
+            />
+            <button class="time-calc__button" type="submit" >
+              <svg class="time-calc__svg">
+                <use href="../img/symbol-defs.svg#icon-search" />
+              </svg>
+            </button>
+          </form>
+          <div class="time-calc__equal-line"></div>
+          <p class="time-calc"><span class="time-calc__days">0</span>дн. <span class="time-calc__hours">0</span>:<span class="time-calc__minutes">0</span></p>
+    </div>
+    <div class="time-calc__line"></div>
+  </div>
+</section>
+    <div class="dinosour">
+    <div class="container">
+        <h2 class="dinosour__text">Google динозавр</h2>
+        <div class="dinosour__box"> 
+            <img  src="" alt="dinosour">
+            <img src="" alt="ckuctus">
+        </div>
+    </div>
+</div>
+    <section class="football">
+  <div class="container football__box">
+  <h2 class="football__title">Футбол</h2>
+  <div class="football__stadium">
+    <img src="../img/football.webp" alt="" class="football__ball" />
+    <div class="football__points"></div>
+    <div class="football__points"></div>
+    <div class="football__points"></div>
+  </div> 
+  <p class="football__text">Очків: <span class="football__score">0</span></p>
+  <div class="football__line"></div>
+</div>
+</section>
+
+    <div class="three">
+    <div class="container three__container">
+        <h2 class="three__text">Введіть 3 числа</h2>
+        <form class="three__box">
+            <input placeholder="Введіть число" class="three__input" type="text">
+            <input placeholder="Введіть число" class="three__input" type="text">
+            <input placeholder="Введіть число" class="three__input" type="text">
+        </form>
+        <p class="three__answer">Найбільше число, яке ви ввели - <span></span></p>
+        <div class="line"></div>
+    </div>
+</div>
+    <section class="team">
+<div class="container team__box">
+    <h2 class="team__title">Наша команда</h2>
+    <div class="team__content">
+        <button class="team__button" id="left">
+        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="102" viewBox="0 0 52 102" fill="none" class="team__svg">
+            <path d="M51 1L1 51L51 101" stroke="black"/>
+            </svg>
+        </button>
+            <div class="team__card-screen">
+    <ul class="team__list">
+        <li class="team__card" id="Danylo">
+            <img src="" alt="" class="team__pic">
+            <h3 class="team__name">Данило</h3>
+            <p class="team__role">Інформація про роботу, яку він/вона виконав/ла</p>
+        </li>
+        <li class="team__card" id="Ostap">
+            <img src="" alt="" class="team__pic">
+            <h3 class="team__name" >Остап</h3>
+            <p class="team__role">Інформація про роботу, яку він/вона виконав/ла</p>
+        </li>
+    </ul>
+    <svg xmlns="http://www.w3.org/2000/svg" width="54" height="3" fill="none" class="team__lines">
+        <rect width="30" height="3"  fill="#797979" id="first"/>
+        <rect x="36" width="18" height="3" fill="#D9D9D9" id="second"/>
+      </svg>
+      </div>
+      <button class="team__button" id="right">
+    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="102" viewBox="0 0 52 102" fill="none" class="team__svg">
+        <path d="M1 1L51 51L1 101" stroke="black"/>
+      </svg>
+    </button>
+    </div>
+    <div class="team__line"></div>
+</div>
+</section>
+    <div class="scientist">
+    <div class="container  scientist__container">
+        <h2 class="scientist__text">Обери вченого/их</h2>
+        <ul class="scientist__images">
+            <li class="scientist__image"></li>
+            <li class="scientist__image"></li>
+            <li class="scientist__image"></li>
+            <li class="scientist__image"></li>
+            <li class="scientist__image"></li>
+            <li class="scientist__image"></li>
+            <li class="scientist__image"></li>
+            <li class="scientist__image"></li>
+            <li class="scientist__image"></li>
+            <li class="scientist__image"></li>
+            <li class="scientist__image"></li>
+            <li class="scientist__image"></li>
+        </ul>
+        <ul class="scientist__list">
+            <li class="scientist__box"><button class="scientist__button">Які вчені народилися в 19 ст.</button>
+                <button class="scientist__button">Знайти рік народження Albert Einshtein</button>
+            </li>
+            <li class="scientist__box">
+                <button class="scientist__button">Відсортувати вчених за алфавітом</button>
+                <button class="scientist__button">Знайти вчених, прізвища яких починаються на на літеру “С” </button>
+            </li>
+            <li class="scientist__box">
+                <button class="scientist__button">Відсортувати вчених за кількістю прожитих років</button>
+                <button class="scientist__button">Видалити всіх вчених, ім’я яких починається на “А”</button>
+            </li>
+            <li class="scientist__box">
+                <button class="scientist__button">Знайти вченого, який народився найпізніше</button>
+                <button class="scientist__button">Знайти вченого, який прожив найдовше і вченого, який прожив найменше</button>
+            </li>
+        </ul>
+       <button class="scientist__button">1. Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
+    </div>
+</div>
+    <footer class="footer">
+  <div class="footer__containre">
+    <img src="../img/logo.png" alt="" />
+    <div class="footer__text-box">
+      <p class="footer__social">
+        Тел: +38 (123) 456 78 90 E-Mail: codingmagic@gmail.com Facebook:
+        CodingMagic Twitter: CodingMagic Instagram: CodingMagic
+      </p>
+    </div>
+    <div class="footer__box">
+      <form class="footer__form">
+        <input type="email" class="footer__input" required placeholder="Ваша ел. адреса..."/>
+        <button type="button" class="footer__button">Підписатись</button>
+      </form>
+      <p class="footer__warning">
+        *Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті
+      </p>
+    </div>
+  </div>
+</footer>
+
+    <div class="backdrope">
+<div class="modale">
+    <button class="modale__cancel">
+        <svg class="modale__icon">
+            <use href="../img/symbol-defs.svg#icon-cancel" />
+          </svg>
+    </button>
+    <h2 class="modale__text">Привіт! <br>
+        Ви потрапили на сайт інтерактивних ігор та завдань
+        Надіємось, що вам сподобається і ви отримаєте позитивні емоції!
+        Бажаємо Вам гарно провести час!
+    </h2>
+    <p class="modale__minitext">Введіть своє ім’я:</p>
+    <input placeholder="Ваше ім’я..." class="modale__input" type="text">
+    <button class="modale__button">Зберегти</button>
+    <p class="modale__thank">Дякую за підписку!</p>
+
+    <img src="../img/puzzle.png" class="modale__svg  modale__puzzle" alt="puzzle">
+    <img src="../img/tic-tac-toe.png" class="modale__svg modale__tic" alt="tic-tac-toe">
+    <img src="../img/game-development.png" class="modale__svg modale__dev" alt="game-development">
+    <img src="../img/sword.png" class="modale__svg modale__sword" alt="sword">
+</div>
+</div>
+    <div class="backdrop">
+<div class="thank" >
+    <button class="thank__button">
+<svg class="thank__close">
+    <use href="../img/symbol-defs.svg#icon-cancel"/>
+</svg>
+</button>
+<div class="thank__content">
+    <div class="thank__first-row">
+    <img src="../img/sword.png" class="thank__svg" alt="sword">
+<h2 class="thank__title">Дякую за підписку!</h2>
+<img src="../img/game-development.png" class="thank__svg" alt="game-development">
+</div>
+<div class="thank__second-row">
+    <img src="../img/puzzle.png" class="thank__svg" alt="puzzle">
+    <img src="../img/tic-tac-toe.png" class="thank__svg" alt="tic-tac-toe">
+</div>
+</div>
+</div>
+</div>
 
     
   </body>
