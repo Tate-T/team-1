@@ -54,6 +54,7 @@ fill: #fff;
     }
 
     &__answer {
+        display: none;
         color: #039900;
 text-align: right;
 font-family: "Montserrat Alternates";
@@ -63,13 +64,14 @@ font-weight: 400;
 line-height: normal;
 width: 224px;
 height: 15px;
+margin-left: 202px;
     }
 
     &__box {
+        padding-left: 72px;
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap:202px;
+        justify-content: start;
         width: 100%;
     }
 }
