@@ -1,34 +1,39 @@
 let answer;
+let znak;
 
 document.querySelector("#dor").addEventListener("click" , (e) => {
     e.preventDefault();
+    const a = Number(document.querySelector("#firste").value);
+    const b = Number(document.querySelector("#seconde").value);
+if(znak === "+"){
+answer = a + b;
+}else if(znak === "*"){
+    answer = a * b;
+}else if(znak === "-"){
+    answer = a - b;
+}else if(znak === "/"){
+    answer = a / b;
+}
+
 document.querySelector(".calc__answer").textContent = answer;
 });
 
 document.querySelector("#plu").addEventListener("click" , (e) => {
-    const a = Number(document.querySelector("#firste").value);
-const b = Number(document.querySelector("#seconde").value);
-    e.preventDefault();
-     answer = a + b;
+ e.preventDefault();
+     znak =  "+";
 });
 
 document.querySelector("#mno").addEventListener("click" , (e) => {
-    const a = Number(document.querySelector("#firste").value);
-const b = Number(document.querySelector("#seconde").value);
     e.preventDefault();
-     answer = a * b;
+     znak = "*";
 });
 
 document.querySelector("#min").addEventListener("click" , (e) => {
-    const a = Number(document.querySelector("#firste").value);
-const b = Number(document.querySelector("#seconde").value);
     e.preventDefault();
-     answer = a - b;
+     znak = "-";
 });
 
 document.querySelector("#dil").addEventListener("click" , (e) => {
-    const a = Number(document.querySelector("#firste").value);
-const b = Number(document.querySelector("#seconde").value);
     e.preventDefault();
-     answer = a / b;
+     znak = "/";
 });
