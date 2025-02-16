@@ -27,9 +27,25 @@ position: relative;
 
     &__ball{
         position: absolute;
-        left: 92px;
-        bottom: 85px;
         transition-duration: 250ms;
+    }
+
+    &__text{
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 36px;
+    }
+
+    &__points{
+        width: 50px;
+        height: 50px;
+        background-color: gold;
+        border-radius: 50%;
+        position: absolute;
     }
 
     &__line{

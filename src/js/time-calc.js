@@ -1,6 +1,5 @@
 const form = document.querySelector(".time-calc__form")
 const input = document.querySelector(".time-calc__input")
-
 let days = document.querySelector(".time-calc__days")
 let hours = document.querySelector(".time-calc__hours")
 let minutes = document.querySelector(".time-calc__minutes")
