@@ -3,7 +3,6 @@ const options = document.querySelectorAll(".rps__button:nth-child(1)")
 const rockOption = options[0]
 const scissorOption = options[1]
 const paperOption = options[2]
-console.log(rockOption)
 
 
 const winner = document.querySelector(".rps__result")

@@ -7,7 +7,8 @@ let minutes = document.querySelector(".time-calc__minutes")
 form.addEventListener("submit", (e) => {
     
     if (isNaN(input.value) || input.value < 0) {
-        return ;
+        e.preventDefault()
+        return input.value = "";
     }
     e.preventDefault()
     let d = Math.floor(input.value / 1440); 
