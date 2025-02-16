@@ -1,91 +1,109 @@
-.team{
-    &__box{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.team {
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    &__title{
-        color: #000;
-font-family: "Montserrat Alternates";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-bottom: 36px;
-    }
+  &__title {
+    color: #000;
+    font-family: "Montserrat Alternates";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 36px;
+  }
 
-    &__content{
-        display: flex;
-        gap: 245px;
-        margin-bottom: 36px;
-        align-items: center;
-    }
+  &__content {
+    display: flex;
+    gap: 245px;
+    margin-bottom: 36px;
+    align-items: center;
+  }
 
-    &__svg{
-        width: 50px;
-height: 100px;
-flex-shrink: 0;
-stroke-width: 1px;
-stroke: #000;
-    }
+  &__svg {
+    width: 50px;
+    height: 100px;
+    flex-shrink: 0;
+    stroke-width: 1px;
+    stroke: #000;
+  }
 
-    &__card-screen{
-        height: 249px;
-    }
+  &__button {
+    background: none;
+  }
 
-    &__list{
-        display: flex;
-        margin-bottom: 24px;
-    }
+  &__card-screen {
+    height: 273px;
+    width: 150px;
+    position: relative;
+    overflow: hidden;
+  }
 
-    &__card{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
+  &__list {
+    display: flex;
+    margin-bottom: 24px;
+    gap: 10px;
+    position: absolute;
+    left: auto;
+    bottom: auto;
+    transition-duration: 250ms;
+  }
 
-    &__card:nth-child(2){
-        display: none;
-        pointer-events: none;
-        opacity: none;
-    }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 
-    &__pic{
-        width: 150px;
-height: 150px;
-flex-shrink: 0;
-border-radius: 20px;
-background: #D9D9D9;
-    }
+  &__card:nth-child(2) {
+  }
 
-    &__name{
-        color: #000;
-font-family: "Montserrat Alternates";
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin: 0;
-    }
+  &__pic {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #d9d9d9;
+  }
 
-    &__role{
-        color: #000;
-font-family: "Montserrat Alternates";
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-    }
+  &__name {
+    color: #000;
+    font-family: "Montserrat Alternates";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+  }
 
-    &__line{
-        width: 536px;
-        height: 2px;
-flex-shrink: 0;
-stroke-width: 3px;
-background-color: #000;
-margin-top: 36px;
-    }
+  &__role {
+    color: #000;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 
+  &__lines {
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    left: 40px;
+  }
+
+  &__line {
+    width: 536px;
+    height: 2px;
+    flex-shrink: 0;
+    stroke-width: 3px;
+    background-color: #000;
+    margin-top: 36px;
+  }
+}
+rect{
+    transition-duration: 250ms;
 }
