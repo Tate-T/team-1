@@ -28,6 +28,10 @@ line-height: normal;
     }
 
     &__image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100px;
 height: 100px;
 border-radius: 20px;
@@ -92,4 +96,24 @@ flex-wrap: wrap;
     }
 
 
+    &__name {
+        color: #000;
+text-align: center;
+font-family: "Montserrat Alternates";
+font-size: 8px;
+font-style: normal;
+font-weight: 400;
+line-height: 170%; /* 13.6px */
+    }
+
+
+    &__born {
+        color: #000;
+text-align: center;
+font-family: "Montserrat Alternates";
+font-size: 8px;
+font-style: normal;
+font-weight: 400;
+line-height: 170%; /* 13.6px */
+    }
 }
