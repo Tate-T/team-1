@@ -177,3 +177,64 @@ document.querySelector("#btn-delete-a").addEventListener("click", () => {
         }
     });
 });
+
+
+document.querySelector("#btn-latest-born").addEventListener("click", () => {
+    let min = 0;
+    scientists.forEach(element => {
+        idButton = element.id;
+        document.querySelector(`#scientist-${idButton}`).style.border = "none";
+        if(min < element.born){
+            min = element.born;
+        }
+    });
+    scientists.forEach(element => {
+        if(min == element.born){
+            const sixTask = element.id;
+            document.querySelector(`#scientist-${sixTask}`).style.border = "2px, red, solid";
+        }
+    })
+});
+
+
+document.querySelector("#btn-longest-shortest-lived").addEventListener("click", () => {
+    let min = 0;
+    let max = 0;
+    scientists.forEach(element => {
+        idButton = element.id;
+        document.querySelector(`#scientist-${idButton}`).style.border = "none";
+        if(max < element.dead - element.born){
+            max = element.dead - element.born;
+        }
+        
+    });
+    min = max;
+    scientists.forEach(element => {
+        if(min > element.dead - element.born){
+            min = element.dead - element.born;
+        }
+    })
+    scientists.forEach(element => {
+            if(max == element.dead - element.born){
+                const sevenTask = element.id;
+                document.querySelector(`#scientist-${sevenTask}`).style.border = "2px, red, solid";
+            }
+            if(min == element.dead - element.born){
+                const sevenTask = element.id;
+                document.querySelector(`#scientist-${sevenTask}`).style.border = "2px, red, solid";
+            }
+    });
+});
+
+
+document.querySelector("#btn-same-initials").addEventListener("click", () => {
+    scientists.forEach(element => {
+        idButton = element.id;
+        document.querySelector(`#scientist-${idButton}`).style.border = "none";
+        if(element.surname[0] == element.name[0]){
+        const fourTask = element.id;
+        document.querySelector(`#scientist-${fourTask}`).style.border = "2px, red, solid";
+            
+        }
+    });
+});
