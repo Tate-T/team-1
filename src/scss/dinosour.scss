@@ -1,0 +1,70 @@
+.dinosour {
+
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__minitext {
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+
+    &__box {
+        background-image: url("../img/city.png");
+        background-repeat: repeat-x;
+        background-size: 80px;
+        background-position: 90%;
+        position: relative;
+        width: 720px;
+        height: 241px;
+        overflow:hidden;
+    }
+
+    &__text {
+        color: #000;
+font-family: "Montserrat Alternates";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    }
+
+    #dino {
+        stroke: green;
+        stroke-width: 1px;
+        fill: greenyellow;
+        z-index: 1;
+        position: absolute;
+        top: 190px;
+        left: 100px;
+        width: 35px;
+        height: 45px;
+    }
+
+    @keyframes dino {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-100px); }
+        100% { transform: translateY(0); }
+    }
+
+    #cucktus {
+        stroke: darkred;
+        stroke-width: 1px;
+        fill: red;
+        width: 40px;
+        height: 40px;
+        z-index: 0;
+        position: absolute;
+        top: 200px;
+        right: 100px;
+        transform: scaleX(-1);
+    }
+}
