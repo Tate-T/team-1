@@ -8,6 +8,7 @@
     }
 
     &__minitext {
+        margin: 20px;
         color: #000;
         font-family: "Montserrat Alternates";
         font-size: 20px;
@@ -26,6 +27,7 @@
         width: 720px;
         height: 241px;
         overflow:hidden;
+        border-radius: 20px;
     }
 
     &__text {

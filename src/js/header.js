@@ -1,3 +1,126 @@
+const games =  [
+  {
+    id: 1,
+    name: 'Високосний калькулятор',
+    category: 'numerical',
+
+  },
+  {
+      id: 2,
+      name: 'Вгадай число',
+      category: 'numerical',
+
+    },
+    {
+      id: 3,
+      name: 'Камінь-Ножиці-Папір',
+      category: 'game',
+
+    },
+    {
+      id: 4,
+      name: 'Калькулятор',
+      category: 'numerical',
+
+    },
+    {
+      id: 5,
+      name: 'Калькулятор часу',
+      category: 'numerical',
+
+    },
+    {
+      id: 6,
+      name: 'Google динозаврик',
+      category: 'game',
+
+    },
+    {
+      id: 7,
+      name: 'Футбол',
+      category: 'game',
+
+    },
+    {
+      id: 8,
+      name: 'Найбільше число',
+      category: 'numerical',
+
+    },
+    {
+      id: 9,
+      name: 'Наша команда',
+      category: 'acquaintance',
+
+    },
+    {
+      id: 10,
+      name: 'Вчений',
+      category: 'acquaintance',
+
+    },
+]
+let num = 0;
+document.querySelector("#numerical").addEventListener("click", () => {
+  if(num == 0){
+    games.forEach(element => {
+      document.querySelector(`#section-${element.id}`).style.display = "none";
+    });
+    games.forEach(element => {
+      if(element.category === "numerical"){
+      document.querySelector(`#section-${element.id}`).style.display = "block";
+      }
+    });
+    num = 1
+  }else if(num == 1){
+    games.forEach(element => {
+      document.querySelector(`#section-${element.id}`).style.display = "block";
+    });
+    num = 0;
+  }
+});
+
+
+let game = 0;
+document.querySelector("#game").addEventListener("click", () => {
+  if(game == 0){
+    games.forEach(element => {
+      document.querySelector(`#section-${element.id}`).style.display = "none";
+    });
+    games.forEach(element => {
+      if(element.category === "game"){
+      document.querySelector(`#section-${element.id}`).style.display = "block";
+      }
+    });
+    game = 1
+  }else if(game == 1){
+    games.forEach(element => {
+      document.querySelector(`#section-${element.id}`).style.display = "block";
+    });
+    game = 0;
+  }
+});
+
+let acqua = 0;
+document.querySelector("#acquaintance").addEventListener("click", () => {
+  if(acqua == 0){
+    games.forEach(element => {
+      document.querySelector(`#section-${element.id}`).style.display = "none";
+    });
+    games.forEach(element => {
+      if(element.category === "acquaintance"){
+      document.querySelector(`#section-${element.id}`).style.display = "block";
+      }
+    });
+    acqua = 1
+  }else if(acqua == 1){
+    games.forEach(element => {
+      document.querySelector(`#section-${element.id}`).style.display = "block";
+    });
+    acqua = 0;
+  }
+});
+
 const header = document.querySelector(".header");
 console.log(header);
 const headerButton = header.querySelector(".header__button");
@@ -43,8 +166,10 @@ headerSwich.addEventListener("change", () => {
           document.querySelectorAll('h3').forEach(element => {
             element.style.color = 'white';
           }); 
+          document.querySelector('.dinosour__minitext').style.color = 'black';
           document.querySelector(".header").style.backgroundColor = '#212121';
           document.querySelector(".footer").style.backgroundColor = '#212121';
+          document.querySelector(".dinosour__box").style.backgroundColor = '#FFF';
         t = 1;
     }else if(t === 1){
         document.querySelectorAll('.container').forEach(element => {
@@ -68,6 +193,7 @@ headerSwich.addEventListener("change", () => {
           document.querySelector(".header").style.backgroundColor = '#FFF';
           document.querySelector(".footer").style.backgroundColor = '#FFF';
         document.querySelector(".header__circle").style.transform = "translate(0px)";
+        document.querySelector(".rps__comp").style.color= "white";
             t = 0;
     }
 
