@@ -35,7 +35,7 @@
   }
 
   &__card-screen {
-    height: 273px;
+    height: 300px;
     width: 150px;
     position: relative;
     overflow: hidden;
@@ -58,14 +58,13 @@
     gap: 20px;
   }
 
-  &__card:nth-child(2) {
-  }
+
 
   &__pic {
     width: 150px;
-    height: 150px;
-    flex-shrink: 0;
-    border-radius: 20px;
+
+    overflow: hidden;
+     border-radius: 20px;
     background: #d9d9d9;
   }
 
