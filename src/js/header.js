@@ -166,6 +166,9 @@ headerSwich.addEventListener("change", () => {
           document.querySelectorAll('h3').forEach(element => {
             element.style.color = 'white';
           }); 
+          document.querySelector('.scientist').querySelectorAll('p ,h3').forEach(element => {
+            element.style.color = 'black';
+          }); 
           document.querySelector('.dinosour__minitext').style.color = 'black';
           document.querySelector(".header").style.backgroundColor = '#212121';
           document.querySelector(".footer").style.backgroundColor = '#212121';
