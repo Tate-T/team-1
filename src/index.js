@@ -2,6 +2,7 @@ import "./js/header.js" ;
 import "./js/title.js" ;
 import "./js/leap-year.js" ;
 import "./js/numer-guess.js" ;
+import "./js/squad.js" ;
 import "./js/rock-paper-scisor.js" ;
 import "./js/calc.js" ;
 import "./js/time-calc.js" ;
