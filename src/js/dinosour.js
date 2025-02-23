@@ -22,9 +22,6 @@ let cuckPos = cukctus.getBoundingClientRect();
 document.querySelector(".dinosour__box").addEventListener("click", () => {
   if (play === 0) {
     move();
-    dino
-    .querySelector("use")
-    .setAttribute("href", "/img/symbol-defs.svg#icon-male");
     play = 1;
   } else if (play === 1) {
     play = 2;
@@ -32,7 +29,9 @@ document.querySelector(".dinosour__box").addEventListener("click", () => {
 });
 
 document.addEventListener("keydown", (e) => {
-  e.preventDefault();
+  if(e.code === "ArrowUp" || e.code === "Space"){
+      e.preventDefault();
+  }
   if(e.code === "ArrowUp" || e.code === "KeyW" || e.code === "Space"){
   jump();
   }
@@ -41,12 +40,10 @@ document.addEventListener("keydown", (e) => {
 function jump() {
   dino
     .querySelector("use")
-    .setAttribute("href", "/img/symbol-defs.svg#icon-child");
   dino.style.animation = "ease-out 1.3s dino";
   setTimeout(() => {
     dino
       .querySelector("use")
-      .setAttribute("href", "/img/symbol-defs.svg#icon-male");
     dino.style.animation = "none";
   }, 1300);
 }
@@ -68,9 +65,6 @@ function move() {
     v = -40;
     scor = 0;
     document.querySelector(".dinosour__minitext").textContent = scor;
-    dino
-    .querySelector("use")
-    .setAttribute("href", "/img/symbol-defs.svg#icon-user");
         play = 2;
   }
   if (Math.abs(dinoPosi.left - cuckPosi.left) < 1.5) {
