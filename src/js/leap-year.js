@@ -6,7 +6,12 @@ form.addEventListener("submit", (e) => {
         text.style.color = "grey"
         text.innerHTML = "Це не число!"
          text.style.visibility = "visible"
-    } else {
+    } else if (input.value <= 0){
+        text.style.color = "grey"
+        text.innerHTML = "Введіть додатнє число!"
+         text.style.visibility = "visible"
+    }
+    else {
     if ( input.value % 4 === 0) {
         text.style.visibility = "visible"
                 text.style.color = "#039900"
