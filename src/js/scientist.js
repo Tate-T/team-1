@@ -88,6 +88,8 @@ const scientists = [
 let idButton 
 
 document.querySelector("#btn-born-19century").addEventListener("click", () => {
+document.querySelector("#scientist-9").innerHTML = ' <h3 class="scientist__name">Ada Lovelace</h3>  <p class="scientist__born">1815 - 1852</p> ';
+document.querySelector("#scientist-1").innerHTML = ' <h3 class="scientist__name">Albert Einstein</h3>  <p class="scientist__born">1879 - 1955</p>';
     scientists.forEach(element => {
         idButton = element.id;
         document.querySelector(`#scientist-${idButton}`).style.border = "none";
@@ -99,8 +101,9 @@ document.querySelector("#btn-born-19century").addEventListener("click", () => {
     });
 });
 
-
 document.querySelector("#btn-einstein-birth").addEventListener("click", () => {
+    document.querySelector("#scientist-9").innerHTML = ' <h3 class="scientist__name">Ada Lovelace</h3>  <p class="scientist__born">1815 - 1852</p> ';
+document.querySelector("#scientist-1").innerHTML = ' <h3 class="scientist__name">Albert Einstein</h3>  <p class="scientist__born">1879 - 1955</p>';
     scientists.forEach(element => {
         idButton = element.id;
         document.querySelector(`#scientist-${idButton}`).style.border = "none";
@@ -109,6 +112,8 @@ document.querySelector("#btn-einstein-birth").addEventListener("click", () => {
 });
 
 document.querySelector("#btn-sort-alphabetically").addEventListener("click", () => {
+    document.querySelector("#scientist-9").innerHTML = ' <h3 class="scientist__name">Ada Lovelace</h3>  <p class="scientist__born">1815 - 1852</p> ';
+document.querySelector("#scientist-1").innerHTML = ' <h3 class="scientist__name">Albert Einstein</h3>  <p class="scientist__born">1879 - 1955</p>';
     let order = 0;
     let scientistsName = [];
     scientists.forEach(element => {
@@ -132,6 +137,8 @@ document.querySelector("#btn-sort-alphabetically").addEventListener("click", () 
 });
 
 document.querySelector("#btn-surname-c").addEventListener("click", () => {
+    document.querySelector("#scientist-9").innerHTML = ' <h3 class="scientist__name">Ada Lovelace</h3>  <p class="scientist__born">1815 - 1852</p> ';
+document.querySelector("#scientist-1").innerHTML = ' <h3 class="scientist__name">Albert Einstein</h3>  <p class="scientist__born">1879 - 1955</p>';
     scientists.forEach(element => {
         idButton = element.id;
         document.querySelector(`#scientist-${idButton}`).style.border = "none";
@@ -145,6 +152,8 @@ document.querySelector("#btn-surname-c").addEventListener("click", () => {
 
 
 document.querySelector("#btn-sort-lifespan").addEventListener("click", () => {
+    document.querySelector("#scientist-9").innerHTML = ' <h3 class="scientist__name">Ada Lovelace</h3>  <p class="scientist__born">1815 - 1852</p> ';
+document.querySelector("#scientist-1").innerHTML = ' <h3 class="scientist__name">Albert Einstein</h3>  <p class="scientist__born">1879 - 1955</p>';
     let order = 0;
     let scientistsName = [];
     scientists.forEach(element => {
@@ -180,6 +189,8 @@ document.querySelector("#btn-delete-a").addEventListener("click", () => {
 
 
 document.querySelector("#btn-latest-born").addEventListener("click", () => {
+    document.querySelector("#scientist-9").innerHTML = ' <h3 class="scientist__name">Ada Lovelace</h3>  <p class="scientist__born">1815 - 1852</p> ';
+document.querySelector("#scientist-1").innerHTML = ' <h3 class="scientist__name">Albert Einstein</h3>  <p class="scientist__born">1879 - 1955</p>';
     let min = 0;
     scientists.forEach(element => {
         idButton = element.id;
@@ -198,6 +209,8 @@ document.querySelector("#btn-latest-born").addEventListener("click", () => {
 
 
 document.querySelector("#btn-longest-shortest-lived").addEventListener("click", () => {
+    document.querySelector("#scientist-9").innerHTML = ' <h3 class="scientist__name">Ada Lovelace</h3>  <p class="scientist__born">1815 - 1852</p> ';
+document.querySelector("#scientist-1").innerHTML = ' <h3 class="scientist__name">Albert Einstein</h3>  <p class="scientist__born">1879 - 1955</p>';
     let min = 0;
     let max = 0;
     scientists.forEach(element => {
@@ -215,6 +228,8 @@ document.querySelector("#btn-longest-shortest-lived").addEventListener("click", 
         }
     })
     scientists.forEach(element => {
+        document.querySelector("#scientist-9").innerHTML = ' <h3 class="scientist__name">Ada Lovelace</h3>  <p class="scientist__born">1815 - 1852</p> ';
+document.querySelector("#scientist-1").innerHTML = ' <h3 class="scientist__name">Albert Einstein</h3>  <p class="scientist__born">1879 - 1955</p>';
             if(max == element.dead - element.born){
                 const sevenTask = element.id;
                 document.querySelector(`#scientist-${sevenTask}`).style.border = "2px, red, solid";
@@ -228,6 +243,8 @@ document.querySelector("#btn-longest-shortest-lived").addEventListener("click", 
 
 
 document.querySelector("#btn-same-initials").addEventListener("click", () => {
+    document.querySelector("#scientist-9").innerHTML = ' <h3 class="scientist__name">Ada Lovelace</h3>  <p class="scientist__born">1815 - 1852</p> ';
+document.querySelector("#scientist-1").innerHTML = ' <h3 class="scientist__name">Albert Einstein</h3>  <p class="scientist__born">1879 - 1955</p>';
     scientists.forEach(element => {
         idButton = element.id;
         document.querySelector(`#scientist-${idButton}`).style.border = "none";

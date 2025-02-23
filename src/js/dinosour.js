@@ -1,3 +1,18 @@
+document.querySelector('.dinosour__button').addEventListener("click" ,() => {
+    document.querySelector(".setting__backdrop").style.display = "flex";
+    document.body.style.overflow = "hidden";
+});
+
+
+document.querySelector('.setting__button').addEventListener("click" ,() => {
+  document.querySelector(".setting__backdrop").style.display = "none";
+  document.body.style.overflow = "scroll";
+});
+
+
+
+
+
 let play = 0;
 let scor = 0;
 let v = 0;
@@ -24,14 +39,14 @@ document.addEventListener("keydown", () => {
 function jump() {
   dino
     .querySelector("use")
-    .setAttribute("href", "./img/symbol-defs.svg#icon-child");
-  dino.style.animation = "ease-out 1s dino";
+    .setAttribute("href", "../img/symbol-defs.svg#icon-child");
+  dino.style.animation = "ease-out 1.2s dino";
   setTimeout(() => {
     dino
       .querySelector("use")
-      .setAttribute("href", "./img/symbol-defs.svg#icon-male");
+      .setAttribute("href", "../img/symbol-defs.svg#icon-male");
     dino.style.animation = "none";
-  }, 1000);
+  }, 1200);
 }
 
 function move() {
