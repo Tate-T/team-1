@@ -7,19 +7,30 @@
     &__title{
         color: #000;
 font-family: "Montserrat Alternates";
-font-size: 24px;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 16px;
+@media screen and (min-width:1090px) {
+    font-size: 24px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
 margin-bottom: 36px;
+}
 
     }
 
     &__line{
-        width: 536px;
+        width: 350px;
         height: 2px;
 flex-shrink: 0;
 stroke-width: 3px;
 background-color: #000;
+@media screen and (min-width: 1090px) {
+    width: 536px;
+}
     }
+
 }
