@@ -3,7 +3,6 @@ document.querySelector('.dinosour__button').addEventListener("click" ,() => {
     document.body.style.overflow = "hidden";
 });
 
-
 document.querySelector('.setting__button').addEventListener("click" ,() => {
   document.querySelector(".setting__backdrop").style.display = "none";
   document.body.style.overflow = "scroll";
@@ -25,7 +24,7 @@ document.querySelector(".dinosour__box").addEventListener("click", () => {
     move();
     dino
     .querySelector("use")
-    .setAttribute("href", "./img/symbol-defs.svg#icon-male");
+    .setAttribute("href", "../img/symbol-defs.svg#icon-male");
     play = 1;
   } else if (play === 1) {
     play = 2;
