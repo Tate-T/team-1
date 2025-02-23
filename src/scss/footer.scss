@@ -56,4 +56,38 @@ font-weight: 400;
 line-height: normal;
 margin-top: 18px;
     }
+
+}
+
+.footer_icon{
+    width: 60px;
+    height: 60px;
+    fill: #eaeaea;
+    transition-duration: 450ms;
+}
+
+.scroll-to-top{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #8ACECF 2px solid;
+    border-radius: 90%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    transition-duration: 250ms;
+}
+
+.scroll-to-top:hover{
+    background-color: #8ACECF;
+    border:  #eaeaea 2px solid;
+    transform: translate(0px, 10px) ;
+}
+
+.scroll-to-top:hover .footer_icon{
+ fill: #000;
+ transform: rotate(360deg);
 }
