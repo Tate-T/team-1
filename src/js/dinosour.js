@@ -38,12 +38,12 @@ document.addEventListener("keydown", () => {
 function jump() {
   dino
     .querySelector("use")
-    .setAttribute("href", ".././img/symbol-defs.svg#icon-child");
+    .setAttribute("href", "../../img/symbol-defs.svg#icon-child");
   dino.style.animation = "ease-out 1.2s dino";
   setTimeout(() => {
     dino
       .querySelector("use")
-      .setAttribute("href", ".././img/symbol-defs.svg#icon-male");
+      .setAttribute("href", "../../img/symbol-defs.svg#icon-male");
     dino.style.animation = "none";
   }, 1200);
 }
@@ -67,7 +67,7 @@ function move() {
     document.querySelector(".dinosour__minitext").textContent = scor;
     dino
     .querySelector("use")
-    .setAttribute("href", ".././img/symbol-defs.svg#icon-user");
+    .setAttribute("href", "../../img/symbol-defs.svg#icon-user");
         play = 2;
   }
   if (Math.abs(dinoPosi.left - cuckPosi.left) < 1.5) {
