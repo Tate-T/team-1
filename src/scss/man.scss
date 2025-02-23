@@ -1,4 +1,4 @@
-.dinosour {
+.man {
 
 
     &__container {
@@ -19,6 +19,8 @@
 
 
     &__box {
+        background-image: url("../img/city.png");
+        background-repeat: repeat-x;
         background-size: 80px;
         background-position: 90%;
         position: relative;
@@ -55,7 +57,10 @@ line-height: normal;
 flex-wrap: wrap;
     }
 
-    #dino {
+    #man {
+        stroke: green;
+        stroke-width: 1px;
+        fill: greenyellow;
         z-index: 1;
         position: absolute;
         top: 190px;
@@ -64,13 +69,16 @@ flex-wrap: wrap;
         height: 45px;
     }
 
-    @keyframes dino {
+    @keyframes man {
         0% { transform: translateY(0); }
         50% { transform: translateY(-100px); }
         100% { transform: translateY(0); }
     }
 
-    #cucktus {
+    #moto {
+        stroke: darkred;
+        stroke-width: 1px;
+        fill: red;
         width: 40px;
         height: 40px;
         z-index: 0;
