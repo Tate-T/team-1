@@ -31,8 +31,11 @@ document.querySelector(".dinosour__box").addEventListener("click", () => {
   }
 });
 
-document.addEventListener("keydown", () => {
+document.addEventListener("keydown", (e) => {
+  e.preventDefault();
+  if(e.code === "ArrowUp" || e.code === "KeyW" || e.code === "Space"){
   jump();
+  }
 });
 
 function jump() {
