@@ -59,10 +59,21 @@ const games =  [
       category: 'acquaintance',
 
     },
+    {
+      id: 11,
+      name: 'Квадратний корінь',
+      category: 'numerical',
+
+    }
 ]
-let num = 0;
+
+document.querySelector("#all").addEventListener("click", () => {
+  games.forEach(element => {
+    document.querySelector(`#section-${element.id}`).style.display = "block";
+  });
+});
+
 document.querySelector("#numerical").addEventListener("click", () => {
-  if(num == 0){
     games.forEach(element => {
       document.querySelector(`#section-${element.id}`).style.display = "none";
     });
@@ -71,19 +82,10 @@ document.querySelector("#numerical").addEventListener("click", () => {
       document.querySelector(`#section-${element.id}`).style.display = "block";
       }
     });
-    num = 1
-  }else if(num == 1){
-    games.forEach(element => {
-      document.querySelector(`#section-${element.id}`).style.display = "block";
-    });
-    num = 0;
-  }
 });
 
 
-let game = 0;
 document.querySelector("#game").addEventListener("click", () => {
-  if(game == 0){
     games.forEach(element => {
       document.querySelector(`#section-${element.id}`).style.display = "none";
     });
@@ -92,18 +94,10 @@ document.querySelector("#game").addEventListener("click", () => {
       document.querySelector(`#section-${element.id}`).style.display = "block";
       }
     });
-    game = 1
-  }else if(game == 1){
-    games.forEach(element => {
-      document.querySelector(`#section-${element.id}`).style.display = "block";
-    });
-    game = 0;
-  }
 });
 
-let acqua = 0;
+
 document.querySelector("#acquaintance").addEventListener("click", () => {
-  if(acqua == 0){
     games.forEach(element => {
       document.querySelector(`#section-${element.id}`).style.display = "none";
     });
@@ -112,13 +106,6 @@ document.querySelector("#acquaintance").addEventListener("click", () => {
       document.querySelector(`#section-${element.id}`).style.display = "block";
       }
     });
-    acqua = 1
-  }else if(acqua == 1){
-    games.forEach(element => {
-      document.querySelector(`#section-${element.id}`).style.display = "block";
-    });
-    acqua = 0;
-  }
 });
 
 const header = document.querySelector(".header");
