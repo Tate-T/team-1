@@ -17,13 +17,18 @@ pointer-events : none;
 }
 
 .thank{
-    width: 463px;
+    width: 320px;
 height: 245px;
 flex-shrink: 0;
     border-radius: 20px;
 background: #FFF;
 position: fixed;
-padding: 69px 42px;
+padding: 50px 10px 10px 10px;
+@media screen and (min-width: 1090px) {
+    padding: 69px 42px;
+    width: 463px;
+    height: 245px;
+}
 
 
     &__close{
@@ -43,6 +48,7 @@ right: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
+
     }
 
     &__title{

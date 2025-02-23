@@ -70,6 +70,13 @@ line-height: normal;
 margin-top: 18px;
     }
 
+    &__box{
+        width: 395px;
+        @media screen and (min-width: 1090px) {
+            width: auto;
+        }
+    }
+
 }
 
 .footer_icon{
