@@ -1,11 +1,19 @@
 .footer{
     background: #FFF;
+    padding: 20px 15px;
+    @media screen and (min-width: 1090px) {
     padding: 60px 175px;
+    }
 
     &__containre{
         display: flex;
         gap: 186px;
         align-items: center;
+        @media screen and (max-width: 480px) {
+            gap: 86px;
+            flex-wrap: wrap;
+          }
+         
     }
 
     &__text-box{
@@ -15,7 +23,12 @@
 
     &__form{
 display: flex;
+flex-direction: column;
 gap: 36px;
+@media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 36px;
+}
     }
 
     &__input{

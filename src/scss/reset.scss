@@ -40,13 +40,22 @@ img {
 }
 
 .container {
+  max-width: 480px;
   background-color: #fff;
   // outline: solid red;
-  padding-left: 185px;
-  padding-right: 185px;
-  padding-top: 36px;
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-top: 16px;
   margin: 0 auto;
-  max-width: 1090px;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-left: 185px;
+    padding-right: 185px;
+    padding-top: 36px;
+  }
+  @media screen and (min-width: 1090px) {
+    max-width: 1090px;
+  }
 }
 
 body{

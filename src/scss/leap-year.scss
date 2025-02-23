@@ -7,31 +7,41 @@
     &__title{
         color: #000;
 font-family: "Montserrat Alternates";
-font-size: 16px;
+font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
 margin-bottom: 36px;
+@media screen and (min-width: 1090px) {
+    font-size: 16px;
+}
     }
     &__form{
-        width: 215px;
+        width: 155px;
 height: 35px;
 flex-shrink: 0;
 filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
-
+@media screen and (min-width: 1090px) {
+    width: 215px;
+}
 
     }
 
     &__input{
         height: 35px;
         display: inline-flex;
-        padding: 10px 45px 10px 10px;
+        padding: 10px 10px 10px 10px;
         align-items: flex-start;
         gap: 10px;
+        font-size: 12.5px;
 border-radius: 20px;
 background: #D7D7D7;
 border:none;
 position: relative;
+@media screen and (min-width: 768px) {
+    font-size: 16px;
+    padding: 10px 45px 10px 10px;
+}
     }
 
     &__button{
@@ -69,17 +79,26 @@ transition-duration: 250ms;
 
     &__content{
         display: flex;
-        gap: 149px;
+        flex-direction: column;
+        gap: 49px;
         align-items: center;
-        margin-bottom: 36px;
+        margin-bottom: 16px;
+        @media screen and (min-width: 1090px) {
+            gap: 149px;
+            margin-bottom: 36px;
+            flex-direction: row;
+        }
     }
 
     &__line{
-        width: 536px;
+        width: 350px;
         height: 2px;
 flex-shrink: 0;
 stroke-width: 3px;
 background-color: #000;
+@media screen and (min-width: 1090px) {
+    width: 536px;
+}
     }
 
    &__result{
