@@ -7,6 +7,7 @@ import "./js/rock-paper-scisor.js" ;
 import "./js/calc.js" ;
 import "./js/time-calc.js" ;
 import "./js/dinosour.js" ;
+import "./js/man.js" ;
 import "./js/football.js" ;
 import "./js/three-numbers.js" ;
 import "./js/team.js" ;

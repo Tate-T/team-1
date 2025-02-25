@@ -1,4 +1,4 @@
-document.querySelector('.dinosour__button').addEventListener("click" ,() => {
+document.querySelector('.man__button').addEventListener("click" ,() => {
     document.querySelector(".setting__backdrop").style.display = "flex";
     document.body.style.overflow = "hidden";
 });
@@ -15,11 +15,11 @@ document.querySelector('.setting__button').addEventListener("click" ,() => {
 let play = 0;
 let scor = 0;
 let v = 0;
-const dino = document.querySelector("#dino");
-const cukctus = document.querySelector("#cucktus");
-let dinoPos = dino.getBoundingClientRect();
-let cuckPos = cukctus.getBoundingClientRect();
-document.querySelector(".dinosour__box").addEventListener("click", () => {
+const man = document.querySelector("#man");
+const moto = document.querySelector("#moto");
+let manPos = man.getBoundingClientRect();
+let motoPos = moto.getBoundingClientRect();
+document.querySelector(".man__box").addEventListener("click", () => {
   if (play === 0) {
     move();
     play = 1;
@@ -38,38 +38,38 @@ document.addEventListener("keydown", (e) => {
 });
 
 function jump() {
-  dino
+  man
     .querySelector("use")
-  dino.style.animation = "ease-out 1.3s dino";
+  man.style.animation = "ease-out 1.3s man";
   setTimeout(() => {
-    dino
+    man
       .querySelector("use")
-    dino.style.animation = "none";
+    man.style.animation = "none";
   }, 1300);
 }
 
 function move() {
-  let dinoPosi = dino.getBoundingClientRect();
-  let cuckPosi = cukctus.getBoundingClientRect();
+  let manPosi = man.getBoundingClientRect();
+  let motoPosi = moto.getBoundingClientRect();
   if (play === 2) {
     play = 0;
     return;
   }
   if (
-    dinoPosi.right > cuckPosi.left &&
-    dinoPosi.left < cuckPosi.right &&
-    dinoPosi.bottom > cuckPosi.top &&
-    dinoPosi.top < cuckPosi.bottom
+    manPosi.right > motoPosi.left &&
+    manPosi.left < motoPosi.right &&
+    manPosi.bottom > motoPosi.top &&
+    manPosi.top < motoPosi.bottom
   ) {
     
     v = -40;
     scor = 0;
-    document.querySelector(".dinosour__minitext").textContent = scor;
+    document.querySelector(".man__minitext").textContent = scor;
         play = 2;
   }
-  if (Math.abs(dinoPosi.left - cuckPosi.left) < 1.5) {
+  if (Math.abs(manPosi.left - motoPosi.left) < 1.5) {
     scor++;
-    document.querySelector(".dinosour__minitext").textContent = scor;
+    document.querySelector(".man__minitext").textContent = scor;
   }
   if (v > 700) {
     v = -40;
@@ -77,6 +77,14 @@ function move() {
   requestAnimationFrame(moveBg);
   v += 3;
   console.log(scor);
-  cukctus.style.right = `${v}px`;
+  moto.style.right = `${v}px`;
   setTimeout(() => move(0 + 1), 10);
+}
+
+let y = 0;
+let body = document.querySelector(".man__box");
+
+function moveBg() {
+  y--;
+  body.style.backgroundPosition =  y + "px " + "90%";
 }
