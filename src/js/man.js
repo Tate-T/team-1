@@ -28,15 +28,6 @@ document.querySelector(".man__box").addEventListener("click", () => {
   }
 });
 
-document.addEventListener("keydown", (e) => {
-  if(e.code === "ArrowUp" || e.code === "Space"){
-      e.preventDefault();
-  }
-  if(e.code === "ArrowUp" || e.code === "KeyW" || e.code === "Space"){
-  jump();
-  }
-});
-
 function jump() {
   man
     .querySelector("use")
@@ -49,6 +40,14 @@ function jump() {
 }
 
 function move() {
+  document.addEventListener("keydown", (e) => {
+    if(e.code === "ArrowUp"){
+        e.preventDefault();
+    }
+    if(e.code === "ArrowUp" || e.code === "KeyW"){
+    jump();
+    }
+  });
   let manPosi = man.getBoundingClientRect();
   let motoPosi = moto.getBoundingClientRect();
   if (play === 2) {
@@ -76,7 +75,6 @@ function move() {
   }
   requestAnimationFrame(moveBg);
   v += 3;
-  console.log(scor);
   moto.style.right = `${v}px`;
   setTimeout(() => move(0 + 1), 10);
 }
