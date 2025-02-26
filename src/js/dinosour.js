@@ -28,14 +28,6 @@ document.querySelector(".dinosour__box").addEventListener("click", () => {
   }
 });
 
-document.addEventListener("keydown", (e) => {
-  if(e.code === "ArrowUp" || e.code === "Space"){
-      e.preventDefault();
-  }
-  if(e.code === "ArrowUp" || e.code === "KeyW" || e.code === "Space"){
-  jump();
-  }
-});
 
 function jump() {
   dino
@@ -49,6 +41,12 @@ function jump() {
 }
 
 function move() {
+  document.addEventListener("keydown", (e) => {
+    if(e.code === "Space"){
+        e.preventDefault();
+    jump();
+    }
+  });
   let dinoPosi = dino.getBoundingClientRect();
   let cuckPosi = cukctus.getBoundingClientRect();
   if (play === 2) {
@@ -74,9 +72,7 @@ function move() {
   if (v > 700) {
     v = -40;
   }
-  requestAnimationFrame(moveBg);
   v += 3;
-  console.log(scor);
-  cukctus.style.right = `${v}px`;
+  cukctus.style.left = `${v}px`;
   setTimeout(() => move(0 + 1), 10);
 }
