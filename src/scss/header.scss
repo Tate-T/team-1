@@ -98,7 +98,7 @@ height: 150px;
   }
 
   &__minitext {
-    margin-left: 51px;
+    margin-left: auto;
     color: #000;
     text-align: right;
     font-family: "Montserrat Alternates";
@@ -106,6 +106,9 @@ height: 150px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    @media screen and (min-width: 768px) {
+      margin-left: 51px;
+   }
   }
 
   &__lable {
