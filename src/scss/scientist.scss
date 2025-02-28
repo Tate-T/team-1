@@ -51,13 +51,19 @@ background: #D9D9D9;
         margin-bottom: 20px;
         margin-left: auto;
         margin-right: auto;
-        width: 436px;
+        width: 408px;
+@media screen and (min-width: 768px) {
+    width: 436px;
+ }
         @media screen and (min-width: 1090px) {
             width: 857px;
         }
     }
 
     &__button {
+@media screen and (max-width: 768px) {
+    max-width: 400px;
+ }
         display: flex;
 padding: 10px 20px;
 align-items: flex-start;
