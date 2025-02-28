@@ -10,6 +10,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 38px;
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+
   }
 
   &__text {
@@ -28,7 +34,6 @@ margin-bottom: 36px;
     justify-content: space-around;
     width: 62px;
 height: 60px;
-margin-right: 38px;
   }
 
   &__button {
@@ -65,7 +70,6 @@ margin-right: 38px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-right: 38px;
   }
 
   &__answer {
@@ -82,15 +86,5 @@ margin-right: 38px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-left: 38px;
   }
-}
-
-
-.line {
-    width: 536px;
-height: 2px;
-flex-shrink: 0;
-background-color: #000;
-margin-top: 36px;
 }

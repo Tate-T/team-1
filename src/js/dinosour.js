@@ -19,12 +19,16 @@ const dino = document.querySelector("#dino");
 const cukctus = document.querySelector("#cucktus");
 let dinoPos = dino.getBoundingClientRect();
 let cuckPos = cukctus.getBoundingClientRect();
-document.querySelector(".dinosour__box").addEventListener("click", () => {
+document.querySelector(".start").addEventListener("click", () => {
   if (play === 0) {
+    document.querySelector(".start").style.backgroundColor = "red";
+     document.querySelector(".start").textContent = "stop"
     move();
     play = 1;
   } else if (play === 1) {
     play = 2;
+      document.querySelector(".start").style.backgroundColor = "green";
+     document.querySelector(".start").textContent = "start"
   }
 });
 
@@ -41,6 +45,10 @@ function jump() {
 }
 
 function move() {
+  document.querySelector(".dinosour__box").addEventListener("click", (e) => {
+        e.preventDefault();
+    jump();
+  });
   document.addEventListener("keydown", (e) => {
     if(e.code === "Space"){
         e.preventDefault();
@@ -50,6 +58,8 @@ function move() {
   let dinoPosi = dino.getBoundingClientRect();
   let cuckPosi = cukctus.getBoundingClientRect();
   if (play === 2) {
+          document.querySelector(".start").style.backgroundColor = "green";
+     document.querySelector(".start").textContent = "start"
     play = 0;
     return;
   }

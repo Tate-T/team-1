@@ -9,13 +9,15 @@
     }
 
     &__images {
-        width: 577px;
         margin-top: 36px;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         gap: 59px;
         row-gap: 36px;
+        @media screen and (min-width: 768px) {
+            width: 577px;
+         }
     }
 
     &__text {
@@ -41,19 +43,22 @@ background: #D9D9D9;
 
 
     &__list {
-        width: 857px;
         display: flex;
         flex-wrap: wrap;
         row-gap: 20px;
         align-items: center;
         margin-top: 36px;
         margin-bottom: 20px;
-        margin-left: 147px;
-        margin-right: 86px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 436px;
+        @media screen and (min-width: 1090px) {
+            width: 857px;
+        }
     }
 
     &__button {
-        display: inline-flex;
+        display: flex;
 padding: 10px 20px;
 align-items: flex-start;
 gap: 10px;
@@ -67,7 +72,10 @@ font-size: 12px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-flex-wrap: wrap;
+    }
+
+    #btn-same-initials {
+        margin: auto ;
     }
 
     &__box:last-child &__button:last-child {
@@ -76,25 +84,40 @@ flex-wrap: wrap;
     }
 
     &__box {
+        gap:20px;
         display: flex;
-        gap:36px;
         align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        @media screen and (min-width: 1090px) {
+        gap:36px;
+        }
+        
+
     }
 
     &__box:nth-child(1) {
+        @media screen and (min-width: 1090px) {
         margin-left: 153px;
+        }
     }
 
     &__box:nth-child(2) {
-        margin-left: auto;
+        @media screen and (min-width: 1090px) {
+        margin-left: 98px;
+        }
     }
 
     &__box:nth-child(3) {
+        @media screen and (min-width: 1090px) {
         margin-right: auto;
+        }
     }
 
     &__box:nth-child(4) {
+        @media screen and (min-width: 1090px) {
         margin-left: 51px;
+        }
     }
 
 

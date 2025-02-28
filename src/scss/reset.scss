@@ -72,3 +72,15 @@ h2 {
 button, input {
   border: none;
 }
+
+
+.line {
+  width: 350px;
+  height: 2px;
+  flex-shrink: 0;
+  stroke-width: 3px;
+  background-color: #000;
+  @media screen and (min-width: 1090px) {
+    width: 536px;
+}
+}
