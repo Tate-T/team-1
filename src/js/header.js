@@ -127,13 +127,13 @@ headerButton.addEventListener("click", () => {
     }
 });
 
-let t = 0;
+let test = 0;
 const cont = document.querySelectorAll(".container");
 console.log(cont);
 
 const headerSwich = header.querySelector(".header__lable");
 headerSwich.addEventListener("change", () => {
-    if(t === 0){
+    if(test === 0){
         document.querySelector(".header__circle").style.transform = "translate(100%)";
         document.querySelectorAll('.container').forEach(element => {
             element.style.backgroundColor = '#212121';
@@ -160,8 +160,8 @@ headerSwich.addEventListener("change", () => {
           document.querySelector(".header").style.backgroundColor = '#212121';
           document.querySelector(".footer").style.backgroundColor = '#212121';
           document.querySelector(".dinosour__box").style.backgroundColor = '#FFF';
-        t = 1;
-    }else if(t === 1){
+        test = 1;
+    }else if(test === 1){
         document.querySelectorAll('.container').forEach(element => {
             element.style.backgroundColor = '#FFF';
           });
@@ -184,7 +184,7 @@ headerSwich.addEventListener("change", () => {
           document.querySelector(".footer").style.backgroundColor = '#FFF';
         document.querySelector(".header__circle").style.transform = "translate(0px)";
         document.querySelector(".rps__comp").style.color= "white";
-            t = 0;
+            test = 0;
     }
 
 });

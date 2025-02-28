@@ -1,4 +1,7 @@
 .man {
+    @media screen and (max-width: 768px) {
+        display: none;
+     }
 
 
     &__container {
@@ -19,6 +22,7 @@
 
 
     &__box {
+        background-color: #FFF;
         background-image: url("../img/city.png");
         background-repeat: repeat-x;
         background-size: 80px;
@@ -55,6 +59,7 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 flex-wrap: wrap;
+margin-bottom: 20px;
     }
 
     #man {
@@ -102,7 +107,7 @@ justify-content: center;
 align-items: center;
 }
 
-.setting {
+.man__setting {
     width: 700px;
     height: 450px;
     border-radius: 20px;
