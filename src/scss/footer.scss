@@ -7,12 +7,17 @@
 
     &__containre{
         display: flex;
-        gap: 186px;
         align-items: center;
-        @media screen and (max-width: 480px) {
-            gap: 86px;
-            flex-wrap: wrap;
+        gap: 86px;
+        flex-wrap: wrap;
+        justify-content: center;
+        @media screen and (min-width: 768px) {
+            gap: 100px;
           }
+          @media screen and (min-width: 1090px) {
+            flex-wrap: nowrap;
+            gap: 186px;
+            }
          
     }
 
