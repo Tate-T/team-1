@@ -64,7 +64,12 @@ const games =  [
       name: 'Квадратний корінь',
       category: 'numerical',
 
-    }
+    },
+    {id: 12,
+    name: 'Google game',
+    category: 'game',
+
+  },
 ]
 
 document.querySelector("#all").addEventListener("click", () => {
