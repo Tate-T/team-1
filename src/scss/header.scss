@@ -34,10 +34,13 @@ fill: #FFF;
   }
 
   &__list {
-    margin-left: 80px;
+    margin-left: auto;
     margin-right: auto;
     display: flex;
     gap: 50px;
+    @media screen and (min-width: 768px) {
+      margin-left: 80px;
+   }
   }
 
   &__link {

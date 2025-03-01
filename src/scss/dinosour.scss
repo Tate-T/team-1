@@ -2,6 +2,7 @@
 
 
     &__container {
+        padding: 0 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -19,12 +20,13 @@
 
 
     &__box {
+        border: #000 solid 3px;
         background-color: #FFF;
         background-size: 80px;
         background-position: 90%;
         position: relative;
         height: 160px;
-        width: 385px;
+        width: 100%;
         overflow:hidden;
         border-radius: 20px;
         @media screen and (min-width: 768px) {
