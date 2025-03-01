@@ -26,6 +26,6 @@ document.querySelector(".squad__button").addEventListener("click", (e) => {
   }else{
         document.querySelector(".squad__answer").style.display = "flex"
         document.querySelector(".squad__answer").style.color = "#900";
-        document.querySelector(".squad__answer").innerHTML = 'В цього числа немає цілого квадрата';
+        document.querySelector(".squad__answer").innerHTML = 'В цього числа немає цілого квадратного кореня';
     }
 });
