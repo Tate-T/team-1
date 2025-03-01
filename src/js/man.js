@@ -1,10 +1,10 @@
 document.querySelector('.man__button').addEventListener("click" ,() => {
-    document.querySelector(".setting__backdrop").style.display = "flex";
+    document.querySelector(".man__backdrop").style.display = "flex";
     document.body.style.overflow = "hidden";
 });
 
-document.querySelector('.setting__button').addEventListener("click" ,() => {
-  document.querySelector(".setting__backdrop").style.display = "none";
+document.querySelector('.mansetting__button').addEventListener("click" ,() => {
+  document.querySelector(".man__backdrop").style.display = "none";
   document.body.style.overflow = "scroll";
 });
 
